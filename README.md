@@ -45,26 +45,26 @@ experiment files 'cache/experiment_hybrid_<index>.dat' (likewise for the files
 
 3. On Mac and Linux run the experiment and redirect the output to file:
      `./run_experiment_hybrid <index>  > ./cache/experiment_hybrid_<index>.dat`
-   where <index> is the experiment index needed by the figure generation script.
+   where `<index>` is the experiment index needed by the figure generation script.
 
 4. Once all data files have been generated, run the figure generation script.
 
-For missing 'cache/experiment_transition_<index>.dat' file, compile the
+For missing `cache/experiment_transition_<index>.dat` files, compile the
 executable using `make run_experiment_transition`, and run it with
-output redirected to 'cache/experiment_transition_<index>.dat'. This part of
+output redirected to `cache/experiment_transition_<index>.dat`. This part of
 the code, as well as the generation of the test problems could be improved.
 We decided to leave the code as-is to avoid introducing errors or inconsistencies
 with the data that was already generated.
 
 Some verification of the code or equations is provided by
-the verify* scripts. The verify_clib_fourier.py script first calls make
-to compile verify_clib_fourier.c and then runs this code for comparison
-with the python implementation of the Fourier representation in bpe.py.
+the verify* scripts. The `verify_clib_fourier.py` script first calls make
+to compile `verify_clib_fourier.c` and then runs this code for comparison
+with the python implementation of the Fourier representation in `bpe.py`.
 
-The 'compress.py' script truncates data files for problems in the 200 and 300
+The `compress.py` script truncates data files for problems in the 200 and 300
 ranges, since only data from the last several iterations is actually used
 (aside from two specific problem instances used for plotting). We added this
 script to reduce the file size for these problems and make it easier to check
 out the repository. When locally regenerating the data it can optionally be
-truncated by running the 'compress.py' script.
+truncated by running the `compress.py` script.
 
