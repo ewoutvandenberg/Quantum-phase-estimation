@@ -122,14 +122,14 @@ def exportFigure(prefix, closeFig=True,label='') :
    # Export the figure
    print("")
    print("Generating figure %s" % (label))
-   print("Uncropped version: %s" % (uncropped))
+   print("Writing uncropped file: %s" % (uncropped))
    plt.savefig(uncropped, transparent=True)
 
    # Close the figure if needed
    if (closeFig) :
       plt.close()
 
-   print("Cropping disabled; see the exportFigure function in generic.py")
+   #print("Cropping disabled; see the exportFigure function in generic.py")
    #try :
    #   # Crop the file
    #   if (os.system("pdfcrop %s %s" % (uncropped, cropped)) == 0) :

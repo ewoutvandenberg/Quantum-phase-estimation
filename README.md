@@ -44,7 +44,7 @@ experiment files 'cache/experiment_hybrid_<index>.dat' (likewise for the files
 2. Create the 'cache' directory if it does not already exist
 
 3. On Mac and Linux run the experiment and redirect the output to file:
-      ./run_experiment_hybrid <index>  > ./cache/experiment_hybrid_<index>.dat
+     `./run_experiment_hybrid <index>  > ./cache/experiment_hybrid_<index>.dat`
    where <index> is the experiment index needed by the figure generation script.
 
 4. Once all data files have been generated, run the figure generation script.
